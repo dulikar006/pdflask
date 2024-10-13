@@ -276,7 +276,6 @@ def run_agents(topic):
     app.get_graph().draw_mermaid_png(output_file_path="graph.png")
 
     conversation = app.invoke({'count': 0, 'history': 'Nothing', 'current_response': ''})
-    #
     # print(conversation['history'])
     #
     # print(conversation["result"])
