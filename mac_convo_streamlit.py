@@ -114,7 +114,9 @@ def run_agents(topic):
         query = llm(query_prompt)
 
         search_results = search_chroma(query, source=source)
-        search_results_text = "\n".join([doc.page_content for doc in search_results])
+        # search_results_text = "\n".join([doc.page_content for doc in search_results])
+        search_results_text = "\n".join([doc.get('content') for doc in search_results])
+
         return search_results_text
 
     def handle_pro(state):

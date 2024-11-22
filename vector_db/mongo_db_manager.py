@@ -81,11 +81,11 @@ def search_chroma( query, source=None, category=None, top_k=5):
 
 # upload_file('sjb_blueprint.pdf')
 # upload_file('NPP Presidential Election Manifesto - 2024.pdf')
-
-query = 'How does the SJB plan to achieve sustainable development and inclusive progress while leveraging innovation for long-term prosperity?'
-
-query = "economy"
-
-# result = search_chroma(query, source='sjb_blueprint.pdf')
-result = search_chroma(query)
-print(result)
+#
+# query = 'How does the SJB plan to achieve sustainable development and inclusive progress while leveraging innovation for long-term prosperity?'
+#
+# query = "economy"
+#
+# # result = search_chroma(query, source='sjb_blueprint.pdf')
+# result = search_chroma(query)
+# print(result)
